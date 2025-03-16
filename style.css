@@ -336,7 +336,7 @@ header {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #343026;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -401,6 +401,7 @@ footer p {
     gap: 20px;
     padding-top: 20px;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 
 #product1 .pro {
@@ -429,7 +430,7 @@ footer p {
 }
 
 #product1 .pro .des span{
-    color: #333;
+    color: #000000;
     font-size: 12px;
     padding: 5px ;
 }
@@ -471,6 +472,10 @@ footer p {
     bottom: 20px;
     right: 10px;
     padding: 2px;
+}
+
+.dunks-product {
+    text-decoration: none;
 }
 
 .star img{
