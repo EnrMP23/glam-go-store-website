@@ -391,7 +391,7 @@ footer p {
 #product1 {
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 
@@ -399,7 +399,7 @@ footer p {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 0px;
     flex-wrap: wrap;
     text-decoration: none;
 }
