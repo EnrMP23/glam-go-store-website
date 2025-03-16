@@ -155,10 +155,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
 }
 
 .hero-jerseys::before {
