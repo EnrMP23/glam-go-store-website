@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Seguro con Stripe</title>
+  </head>
+  
+  <style>
+    .container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente el contenido */
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  height: 70vh; /* Ocupa toda la altura de la pantalla */
+  font-size: 1.5rem; /* Ajusta el tamaño del texto */
+}
+  </style>
+  
+  <body>
+    <section class="container">
+    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1R269NGDvTLbPO3erLppCOpH"
+  publishable-key="pk_live_51R1A40GDvTLbPO3e2VybXRyf1pvj73oTajpUSQUhUYiNKK6RH7ejdHZUqe8M6AK9KQbJ25xFMfOo2sRcjQkUQ5xP00pNTjvmpo"
+>
+</stripe-buy-button>
+    </section>
+  </body>
+</html>
