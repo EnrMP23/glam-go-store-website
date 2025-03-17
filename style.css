@@ -186,8 +186,8 @@ header {
 }
 
 .cta-button, .cta-button-dunks {
-    background: rgb(239, 176, 93);
-    color: #fff;
+    background: rgb(255, 218, 98);
+    color: #000000;
     padding: 0.75rem 1.5rem;
     font-family: "Carrois Gothic";
     border: none;
@@ -200,54 +200,29 @@ header {
 }
 
 .cta-button:hover, .cta-button-dunks:hover {
-    background: rgb(161, 107, 32);
-}
-
-.cta-button-custom1 {
-    color: white;
-    background-color: rgb(163, 31, 31);
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.3s;
-    margin-top: 20px;
-    padding: 0.75rem 1.5rem;
-    font-family: "Carrois Gothic";
-    display: inline-block;
-}
-
-.cta-button-custom2 {
-    color: white;
-    background-color: rgb(30, 50, 154);
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.3s;
-    margin-top: 20px;
-    padding: 0.75rem 1.5rem;
-    font-family: "Carrois Gothic";
-    display: inline-block;
-}
-
-.cta-button-custom3 {
-    color: rgb(0, 0, 0);
-    background-color: whitesmoke;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.3s;
-    margin-top: 20px;
-    padding: 0.75rem 1.5rem;
-    font-family: "Carrois Gothic";
-    display: inline-block;
-}
-
-.cta-button-custom1:hover, .cta-button-custom2:hover, .cta-button-custom3:hover {
-    background: rgb(45, 143, 255);
+    background: rgb(0, 0, 0);
+    color: whitesmoke;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button-custom {
+    color: whitesmoke;
+    background-color: rgb(26, 25, 25);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+    margin-top: 20px;
+    padding: 0.75rem 1.5rem;
+    font-family: "Carrois Gothic";
+    display: inline-block;
+}
+
+.cta-button-custom:hover {
+    background: rgb(255, 212, 69);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
 }
 
 /* About Section */
@@ -382,7 +357,8 @@ footer {
     background-color: #343026;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 50px 0;
+    margin-top: 60px;
 }
 
 footer p {

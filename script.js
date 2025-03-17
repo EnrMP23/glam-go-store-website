@@ -1,4 +1,4 @@
-document.querySelectorAll('nav li a, .hero a, .hero-portfolio a').forEach(anchor => {
+document.querySelectorAll('nav li a, .hero a, .hero-jerseys a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const targetId = this.getAttribute('href');
 
