@@ -213,11 +213,12 @@ header {
     cursor: pointer;
     text-decoration: none;
     transition: background 0.3s;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 0.75rem 1.5rem;
     font-family: "Carrois Gothic";
     display: inline-block;
-    flex-shrink: 1;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 .cta-button-custom:hover {
