@@ -104,7 +104,7 @@ header {
     text-align: center;
     padding: 130px 50px;
     color: whitesmoke;
-    background-image: url('https://res.cloudinary.com/dhvpdrd8m/image/upload/v1742073936/Screenshot_2025-03-15_at_2.25.29_PM_ym1ltd.png'); /* Reemplaza con la URL de tu imagen */
+    background-image: url('https://res.cloudinary.com/dhvpdrd8m/image/upload/v1742257302/Screenshot_2025-03-17_at_5.21.02_PM_znkrq6.png'); /* Reemplaza con la URL de tu imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -493,8 +493,12 @@ footer p {
     padding: 2px;
 }
 
-.dunks-product {
+.dunks-product{
     text-decoration: none;
+}
+
+.dunks-product h4{
+    display: block;
 }
 
 .star img{
