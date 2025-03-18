@@ -217,7 +217,7 @@ header {
     padding: 0.75rem 1.5rem;
     font-family: "Carrois Gothic";
     display: inline-block;
-    margin: 20px 1px 0 1px;
+    flex-shrink: 1;
 }
 
 .cta-button-custom:hover {
