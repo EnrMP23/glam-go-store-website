@@ -139,9 +139,11 @@
           margin-top: 20px;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-        .feedback-stars-div h2, .feedback-stars-div h3 {
+        .feedback-stars-div h2, .feedback-stars-div h3, .feedback-stars-div a {
           display: inline; /* Makes both h3 and h4 inline */
           margin: 0 8px; /* Adds spacing between them */
+          text-decoration: none;
+          color: black
         }
         .star-feedback {
           margin: 0 10px;
@@ -153,6 +155,28 @@
           border-radius: 12px;
           margin: auto;
           margin-top: 15px;
+        }
+        .feedback-dropdown summary {
+          cursor: pointer;
+          font-size: 1.2rem;
+          color: rgb(33, 33, 33);
+          padding: 10px;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        .feedback-dropdown summary:hover {
+          background-color: rgb(240, 240, 240);
+        }
+
+        .feedback-dropdown div {
+          margin-top: 10px;
+        }
+        .feedback-dropdown-div {
+          width: fit-content;
+          margin: auto;
         }
         /* Estilos responsive para dispositivos pequeños */
         @media (max-width: 600px) {
@@ -314,6 +338,24 @@
             <span>📸 Luis-Quint02<br>⭐️⭐️⭐️⭐️⭐️</span>
             </div>
           </section>
+
+          <div class="feedback-dropdown-div">
+            <details class="feedback-dropdown">
+              <summary><strong>🔗 Ver más reviews</strong></summary>
+              <div class="feedback">
+              <div class="feedback-div">
+                <p>🔹 Ana Lopez - "Increíble calidad, llegó rápido y en perfectas condiciones."</p>
+                <img class="user-feedback-img" src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1742706048/IMG_1881_jbrbcu.jpg" alt="user-feedback" width="200px">
+                <span>📸 Ana Lopez<br>⭐️⭐️⭐️⭐️⭐️</span>
+              </div>
+              <div class="feedback-div">
+                <p>🔹 Carlos Mendez - "Muy satisfecho con mi compra, excelente servicio."</p>
+                <img class="user-feedback-img" src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1742762821/s-l960_uurmqb.jpg" alt="user-feedback" width="200px">
+                <span>📸 Carlos Mendez<br>⭐️⭐️⭐️⭐️⭐️</span>
+              </div>
+            </div>
+            </details>
+          </div>
 
       <script>
         let currentIndex = 0;
