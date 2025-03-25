@@ -345,16 +345,7 @@
           <div class="feedback-dropdown-div">
             <details class="feedback-dropdown">
               <summary><strong>🔗 Ver más reviews</strong></summary>
-              <div class="feedback">
-              <div class="feedback-div">
-                <p>🔹 Ana Lopez - "Increíble calidad, llegó rápido y en perfectas condiciones."</p>
-                <span>📸 Ana Lopez<br>⭐️⭐️⭐️⭐️⭐️</span>
-              </div>
-              <div class="feedback-div">
-                <p>🔹 Carlos Mendez - "Muy satisfecho con mi compra, excelente servicio."</p>
-                <span>📸 Carlos Mendez<br>⭐️⭐️⭐️⭐️⭐️</span>
-              </div>
-            </div>
+              <div class="feedback" id="reviews-container"></div>
             </details>
           </div>
 
@@ -381,6 +372,25 @@
         function nextSlide() {
           showSlide(currentIndex + 1);
         }
+
+        // Fetch reviews from the JSON file
+  fetch('reviews.json')
+    .then(response => response.json())
+    .then(reviews => {
+      const reviewsContainer = document.getElementById('reviews-container');
+      reviews.forEach(review => {
+        const reviewHTML = `
+          <div class="feedback-div">
+            <p>🔹 ${review.name} - "${review.comment}"</p>
+            <span>📸 ${review.name}<br>${review.rating}</span>
+          </div>
+        `;
+        reviewsContainer.innerHTML += reviewHTML;
+      });
+    })
+    .catch(error => console.error('Error loading reviews:', error));
+
+        
       </script>
 
     <footer id="contact">

@@ -1,0 +1,167 @@
+[
+    {
+      "name": "Ana Lopez",
+      "comment": "Increíble calidad, llegó rápido y en perfectas condiciones.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Maria Perez",
+      "comment": "El producto llegó en perfectas condiciones, muy recomendado.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Juan Martinez",
+      "comment": "Gran calidad, superó mis expectativas.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Sofia Gomez",
+      "comment": "El envío fue rápido y el producto es excelente.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Diego Torres",
+      "comment": "Muy satisfecho con la compra, volveré a comprar.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Laura Sanchez",
+      "comment": "El mejor lugar para jerseys retro, 100% recomendado.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Miguel Ramirez",
+      "comment": "Excelente atención al cliente, resolvieron todas mis dudas.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Paola Fernandez",
+      "comment": "La calidad es impresionante, vale cada peso.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Ricardo Morales",
+      "comment": "Perfecto para regalar, mi hermano quedó encantado.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Andrea Castillo",
+      "comment": "El jersey es hermoso, llegó antes de lo esperado.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Fernando Ruiz",
+      "comment": "Muy buena experiencia de compra, lo recomiendo.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Gabriela Torres",
+      "comment": "El diseño es increíble, me encantó.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Jorge Hernandez",
+      "comment": "El producto es de alta calidad, muy satisfecho.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Valeria Lopez",
+      "comment": "El mejor jersey que he comprado, lo amo.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Oscar Martinez",
+      "comment": "Gran servicio, el envío fue muy rápido.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Camila Gonzalez",
+      "comment": "El jersey es perfecto, lo recomiendo mucho.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Hector Ramirez",
+      "comment": "Muy buena calidad, el precio lo vale.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Isabel Vega",
+      "comment": "El jersey llegó en tiempo y es de excelente calidad.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Luis Morales",
+      "comment": "Muy satisfecho con la compra, lo recomiendo ampliamente.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Carolina Diaz",
+      "comment": "El diseño es único, me encantó.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Daniela Rios",
+      "comment": "El mejor jersey que he comprado, excelente calidad.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Francisco Lopez",
+      "comment": "Muy buena atención al cliente, resolvieron todas mis dudas.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Alejandro Torres",
+      "comment": "El envío fue rápido y el producto es excelente.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Monica Sanchez",
+      "comment": "Gran calidad, superó mis expectativas.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Roberto Castillo",
+      "comment": "Perfecto para regalar, mi hermano quedó encantado.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Lucia Ramirez",
+      "comment": "El jersey es hermoso, llegó antes de lo esperado.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Pablo Fernandez",
+      "comment": "Muy buena experiencia de compra, lo recomiendo.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Claudia Gomez",
+      "comment": "El diseño es increíble, me encantó.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Eduardo Ruiz",
+      "comment": "El producto es de alta calidad, muy satisfecho.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Patricia Lopez",
+      "comment": "El mejor jersey que he comprado, lo amo.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Javier Martinez",
+      "comment": "Gran servicio, el envío fue muy rápido.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Natalia Gonzalez",
+      "comment": "El jersey es perfecto, lo recomiendo mucho.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Victor Ramirez",
+      "comment": "Muy buena calidad, el precio lo vale.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    }
+  ]
