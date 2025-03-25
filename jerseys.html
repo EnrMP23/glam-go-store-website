@@ -181,6 +181,54 @@
         .feedback-div p {
           text-align: left;
         }
+        .add-review-section {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  background-color: #f9f9f9;
+}
+
+.add-review-section h2 {
+  text-align: center;
+}
+
+.add-review-section label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.add-review-section input, .add-review-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#star-rating label {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.add-review-section button {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  background-color: #fadd4d;
+  color: black;
+  border: none;
+  margin: auto;
+  margin-top: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-review-section button:hover {
+  background-color: #3fb9d7;
+}
+
         /* Estilos responsive para dispositivos pequeños */
         @media (max-width: 600px) {
           .carousel-button {
@@ -349,6 +397,36 @@
             </details>
           </div>
 
+          <div class="add-review-section">
+            <h2>Submit Your Review</h2>
+            <form id="review-form">
+              <label for="full-name">Full Name:</label>
+              <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+          
+              <label for="order-number">Order Number:</label>
+              <input type="text" id="order-number" name="order-number" placeholder="Enter your order number" required>
+          
+              <label for="review-comment">Your Review:</label>
+              <textarea id="review-comment" name="review-comment" placeholder="Write your review here..." required></textarea>
+          
+              <label for="star-rating">Rating:</label>
+              <div id="star-rating">
+                <input type="radio" id="star-1" name="rating" value="1" required>
+                <label for="star-1">⭐️</label>
+                <input type="radio" id="star-2" name="rating" value="2">
+                <label for="star-2">⭐️⭐️</label>
+                <input type="radio" id="star-3" name="rating" value="3">
+                <label for="star-3">⭐️⭐️⭐️</label>
+                <input type="radio" id="star-4" name="rating" value="4">
+                <label for="star-4">⭐️⭐️⭐️⭐️</label>
+                <input type="radio" id="star-5" name="rating" value="5">
+                <label for="star-5">⭐️⭐️⭐️⭐️⭐️</label>
+              </div>
+          
+              <button type="submit">Add Review</button>
+            </form>
+          </div>
+
       <script>
         let currentIndex = 0;
         const items = document.querySelectorAll('.carousel-item');
@@ -390,7 +468,63 @@
     })
     .catch(error => console.error('Error loading reviews:', error));
 
-        
+  // Fetch valid order numbers from orders.json
+  let validOrderNumbers = [];
+  fetch('orders.json')
+    .then(response => response.json())
+    .then(data => {
+      validOrderNumbers = data;
+    })
+    .catch(error => console.error('Error loading order numbers:', error));
+
+  // Handle form submission
+  const reviewForm = document.getElementById('review-form');
+  const reviewsContainer = document.getElementById('reviews-container');
+
+  reviewForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent form from refreshing the page
+
+    // Get form values
+    const fullName = document.getElementById('full-name').value;
+    const orderNumber = document.getElementById('order-number').value;
+    const reviewComment = document.getElementById('review-comment').value;
+    const starRating = document.querySelector('input[name="rating"]:checked').value;
+
+    // Check if the order number is valid
+    if (!validOrderNumbers.includes(orderNumber)) {
+      alert('Invalid order number. Please check your order number and try again.');
+      return;
+    }
+
+    // Check if the order number has already been used
+    const existingReviews = Array.from(reviewsContainer.children);
+    const orderAlreadyReviewed = existingReviews.some(review =>
+      review.dataset.orderNumber === orderNumber
+    );
+
+    if (orderAlreadyReviewed) {
+      alert('This order number has already been used to submit a review.');
+      return;
+    }
+
+    // Create a new review element
+    const newReview = document.createElement('div');
+    newReview.classList.add('feedback-div');
+    newReview.dataset.orderNumber = orderNumber; // Store the order number for validation
+    newReview.innerHTML = `
+      <p>🔹 ${fullName} (Order #${orderNumber}) - "${reviewComment}"</p>
+      <span>📸 ${fullName}<br>${'⭐️'.repeat(starRating)}</span>
+    `;
+
+    // Add the new review to the reviews container
+    reviewsContainer.appendChild(newReview);
+
+    // Clear the form
+    reviewForm.reset();
+
+    // Optional: Show a success message
+    alert('Thank you for your review!');
+  });
       </script>
 
     <footer id="contact">
