@@ -200,17 +200,54 @@
 }
 
 .add-review-section input, .add-review-section textarea {
-  width: 100%;
+  width: 70%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
+
 #star-rating label {
-  margin-right: 10px;
+  margin: 0; /* Removes extra margin */
   cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem; /* Adjusts the size of the stars */
+  color: #ccc; /* Default color for unselected stars */
+  transition: transform 0.2s ease, color 0.3s ease; /* Smooth transition for hover and color */
 }
+
+/* Change color of stars when selected */
+#star-rating input:checked ~ label {
+  color: gold; /* Changes color to gold when selected */
+}
+
+#star-rating input {
+  display: none; /* Hides the radio buttons */
+}
+
+/* Lift the star on hover */
+#star-rating label:hover {
+  transform: scale(1.3); /* Slightly enlarges the star */
+}
+
+/* Ensure all stars to the left also lift */
+#star-rating label:hover ~ label {
+  transform: scale(1.1); /* Slightly enlarges the stars */
+}
+
+/* Add hover effect for the selected star */
+#star-rating input:checked + label:hover {
+  transform: scale(1.7); /* Makes the selected star slightly larger on hover */
+  color: orange; /* Optional: Change the color of the selected star on hover */
+
+}
+
+/* Make the scale stick for the selected star */
+#star-rating input:checked + label {
+  transform: scale(1.5); /* Keeps the selected star slightly enlarged */
+}
+
 
 .add-review-section button {
   display: block;
@@ -411,16 +448,16 @@
           
               <label for="star-rating">Rating:</label>
               <div id="star-rating">
-                <input type="radio" id="star-1" name="rating" value="1" required>
-                <label for="star-1">⭐️</label>
-                <input type="radio" id="star-2" name="rating" value="2">
-                <label for="star-2">⭐️⭐️</label>
-                <input type="radio" id="star-3" name="rating" value="3">
-                <label for="star-3">⭐️⭐️⭐️</label>
-                <input type="radio" id="star-4" name="rating" value="4">
-                <label for="star-4">⭐️⭐️⭐️⭐️</label>
-                <input type="radio" id="star-5" name="rating" value="5">
-                <label for="star-5">⭐️⭐️⭐️⭐️⭐️</label>
+  <input type="radio" id="star-5" name="rating" value="5">
+  <label for="star-5">⭐️</label>
+  <input type="radio" id="star-4" name="rating" value="4">
+  <label for="star-4">⭐️</label>
+  <input type="radio" id="star-3" name="rating" value="3">
+  <label for="star-3">⭐️</label>
+  <input type="radio" id="star-2" name="rating" value="2">
+  <label for="star-2">⭐️</label>
+  <input type="radio" id="star-1" name="rating" value="1">
+  <label for="star-1">⭐️</label>
               </div>
           
               <button type="submit">Add Review</button>
@@ -478,53 +515,53 @@
     .catch(error => console.error('Error loading order numbers:', error));
 
   // Handle form submission
-  const reviewForm = document.getElementById('review-form');
-  const reviewsContainer = document.getElementById('reviews-container');
+const reviewForm = document.getElementById('review-form');
+const reviewsContainer = document.getElementById('reviews-container');
 
-  reviewForm.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent form from refreshing the page
+reviewForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent form from refreshing the page
 
-    // Get form values
-    const fullName = document.getElementById('full-name').value;
-    const orderNumber = document.getElementById('order-number').value;
-    const reviewComment = document.getElementById('review-comment').value;
-    const starRating = document.querySelector('input[name="rating"]:checked').value;
+  // Get form values
+  const fullName = document.getElementById('full-name').value;
+  const orderNumber = document.getElementById('order-number').value;
+  const reviewComment = document.getElementById('review-comment').value;
+  const starRating = document.querySelector('input[name="rating"]:checked').value;
 
-    // Check if the order number is valid
-    if (!validOrderNumbers.includes(orderNumber)) {
-      alert('Invalid order number. Please check your order number and try again.');
-      return;
-    }
+  // Check if the order number is valid
+  if (!validOrderNumbers.includes(orderNumber)) {
+    alert('Invalid order number. Please check your order number and try again.');
+    return;
+  }
 
-    // Check if the order number has already been used
-    const existingReviews = Array.from(reviewsContainer.children);
-    const orderAlreadyReviewed = existingReviews.some(review =>
-      review.dataset.orderNumber === orderNumber
-    );
+  // Check if the order number has already been used
+  const existingReviews = Array.from(reviewsContainer.children);
+  const orderAlreadyReviewed = existingReviews.some(review =>
+    review.dataset.orderNumber === orderNumber
+  );
 
-    if (orderAlreadyReviewed) {
-      alert('This order number has already been used to submit a review.');
-      return;
-    }
+  if (orderAlreadyReviewed) {
+    alert('This order number has already been used to submit a review.');
+    return;
+  }
 
-    // Create a new review element
-    const newReview = document.createElement('div');
-    newReview.classList.add('feedback-div');
-    newReview.dataset.orderNumber = orderNumber; // Store the order number for validation
-    newReview.innerHTML = `
-      <p>🔹 ${fullName} (Order #${orderNumber}) - "${reviewComment}"</p>
-      <span>📸 ${fullName}<br>${'⭐️'.repeat(starRating)}</span>
-    `;
+  // Create a new review element
+  const newReview = document.createElement('div');
+  newReview.classList.add('feedback-div');
+  newReview.dataset.orderNumber = orderNumber; // Store the order number for validation
+  newReview.innerHTML = `
+    <p>🔹 ${fullName} - "${reviewComment}"</p>
+    <span>➖ ${fullName}<br>${'⭐️'.repeat(starRating)}</span>
+  `;
 
-    // Add the new review to the reviews container
-    reviewsContainer.appendChild(newReview);
+  // Add the new review to the top of the reviews container
+  reviewsContainer.prepend(newReview);
 
-    // Clear the form
-    reviewForm.reset();
+  // Clear the form
+  reviewForm.reset();
 
-    // Optional: Show a success message
-    alert('Thank you for your review!');
-  });
+  // Optional: Show a success message
+  alert('Thank you for your review!');
+});
       </script>
 
     <footer id="contact">
