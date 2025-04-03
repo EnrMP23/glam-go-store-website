@@ -532,7 +532,7 @@
         const reviewHTML = `
           <div class="feedback-div">
             <p>🔹 ${review.name} - "${review.comment}"</p>
-            <span>➖ ${review.name}<br>${review.rating}</span>
+            <span>➖ ${review.name}<br><br>${review.rating}</span>
           </div>
         `;
         reviewsContainer.innerHTML += reviewHTML;
@@ -585,7 +585,7 @@ reviewForm.addEventListener('submit', function (event) {
   newReview.dataset.orderNumber = orderNumber; // Store the order number for validation
   newReview.innerHTML = `
     <p>🔹 ${fullName} - "${reviewComment}"</p>
-    <span>➖ ${fullName}<br>${'⭐️'.repeat(starRating)}</span>
+    <span>➖ ${fullName} ${'⭐️'.repeat(starRating)}</span>
   `;
 
   // Add the new review to the top of the reviews container
