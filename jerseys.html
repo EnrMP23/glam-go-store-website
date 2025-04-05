@@ -294,6 +294,29 @@
 
         /* Estilos responsive para dispositivos pequeños */
         @media (max-width: 600px) {
+          .hero-jerseys {
+            position: relative;
+            text-align: center;
+            padding: 130px 50px;
+            color: white;
+            background-image: url('https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743817794/Screenshot_2025-04-04_at_6.49.33_PM_gyfwsb.png'); /* Reemplaza con la URL de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.6);
+          }
+
+          .hero-jerseys::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.5); /* Tono oscuro: ajusta la opacidad */
+              z-index: 1;
+          }
           .carousel-button {
             font-size: 1.5rem;
             padding: 0.3rem 0.7rem;
@@ -371,7 +394,7 @@
     </nav>
     <div class="hero-jerseys">
         <h1>Drip up, keep moving.</h1>
-        <p>"Descubre tu estilo"</p>
+        <p style="font-family: 'Carrois Gothic', sans-serif;">"Vive la Historia del Fútbol Champagne"</p>
         <a href="#about" class="cta-button"><strong>Explorar</strong></a>
     </div>
 </header>
