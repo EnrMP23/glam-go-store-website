@@ -313,13 +313,14 @@
 
 @media (max-width: 600px) {
     .section-p1 {
-        gap: 5px; /* Slightly increase gap for better spacing */
+        gap: 5px; /* Reduce gap for better spacing */
+        justify-content: space-between; /* Ensure proper alignment */
     }
     .pro-container {
         flex: 1 1 calc(50% - 10px); /* Ensure 2 cards fit per row */
         max-width: calc(50% - 10px); /* Adjust width to fit 2 cards */
         margin: 0; /* Remove extra margin */
-        box-sizing: border-box; /* Ensure padding and border are included in width */
+        box-sizing: border-box; /* Include padding and border in width */
     }
     .pro img {
         width: 100%; /* Ensure images scale properly */
