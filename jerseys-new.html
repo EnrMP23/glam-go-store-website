@@ -313,8 +313,9 @@
 
 @media (max-width: 600px) {
     .pro-container {
-        flex: 1 1 calc(50% - 10px); /* Ensures 2 items per row on small screens */
-        max-width: calc(50% - 10px);
+        flex: 1 1 calc(50% - 10px); /* Ensures two items per row with spacing */
+        max-width: calc(50% - 10px); /* Ensures proper width for two items */
+        margin-bottom: 15px; /* Adds spacing between rows */
     }
 }
 
