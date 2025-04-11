@@ -429,12 +429,13 @@ footer p {
     width: 23%;
     min-width: 250px;
     padding: 10px 22px;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
     margin: 15px 0;
     transition: 0.2s ease;
     position: relative;
+    border-radius: 20px;
 }
 
 #product1 .pro:hover {
@@ -443,6 +444,7 @@ footer p {
 
 #product1 .pro img {
     width: 100%;
+    border-radius: 10px;
 }
 
 #product1 .pro .des {
