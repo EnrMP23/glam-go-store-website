@@ -313,18 +313,42 @@
 
 @media (max-width: 600px) {
     .section-p1 {
-        gap: 5px; /* Reduce gap for better spacing */
-        justify-content: space-between; /* Ensure proper alignment */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Espacio entre tarjetas */
+        justify-content: space-between;
+        padding: 10px;
     }
+
     .pro-container {
-        flex: 1 1 calc(50% - 10px); /* Ensure 2 cards fit per row */
-        max-width: calc(50% - 10px); /* Adjust width to fit 2 cards */
-        margin: 0; /* Remove extra margin */
-        box-sizing: border-box; /* Include padding and border in width */
+        width: calc(50% - 10px); /* Dos tarjetas por fila */
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
     }
+
+    .pro {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .pro img {
-        width: 100%; /* Ensure images scale properly */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .des span,
+    .des h4 {
+        text-align: center;
+        display: block;
+        margin: 5px 0;
     }
 }
 
