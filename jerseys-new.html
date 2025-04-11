@@ -313,13 +313,17 @@
 
 @media (max-width: 600px) {
     .section-p1 {
-        gap: 2px; /* Reduce gap to prevent overlap */
+        gap: 5px; /* Slightly increase gap for better spacing */
     }
     .pro-container {
-        flex: 1 1 calc(50% - 2px); /* Adjust to fit exactly 2 cards per row */
-        max-width: calc(50% - 2px); /* Ensures proper width for 2 cards */
-        margin: 0; /* Remove extra margin to avoid misalignment */
-        width: 10px;
+        flex: 1 1 calc(50% - 10px); /* Ensure 2 cards fit per row */
+        max-width: calc(50% - 10px); /* Adjust width to fit 2 cards */
+        margin: 0; /* Remove extra margin */
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+    }
+    .pro img {
+        width: 100%; /* Ensure images scale properly */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
