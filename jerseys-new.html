@@ -296,6 +296,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; /* Adds spacing between items */
+    flex-direction: row;
 }
 
 .pro-container {
@@ -303,14 +304,6 @@
     max-width: calc(50% - 20px); /* Ensures items don't exceed 50% width */
     box-sizing: border-box; /* Includes padding and border in width calculation */
 }
-
-@media (min-width: 768px) {
-    .pro-container {
-        flex: 1 1 calc(33.33% - 20px); /* Adjust to 3 items per row for larger screens */
-        max-width: calc(33.33% - 20px);
-    }
-}
-
 
 
         /* Estilos responsive para dispositivos pequeños */
