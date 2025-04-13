@@ -291,18 +291,48 @@
   display: block;
   margin-top: 10px;
 }
-.section-p1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Adds spacing between items */
-    flex-direction: row;
+.jersey-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 20px;
 }
 
-.pro-container {
-    flex: 1 1 calc(50% - 20px); /* Default to 2 items per row */
-    max-width: calc(50% - 20px); /* Ensures items don't exceed 50% width */
-    box-sizing: border-box; /* Includes padding and border in width calculation */
+.jersey-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.jersey-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.jersey-info {
+    padding: 15px;
+}
+
+.jersey-info span {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.jersey-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.jersey-info .cart {
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -451,104 +481,76 @@
             <h3>$949.00 MXN + Envio Gratis</h3>
         
     <section id="product1" class="section-p1">
-        <div class="pro-container">
-            <a class="dunks-product" href="https://buy.stripe.com/bIYeWfbOMexd48g144">
-                <div class="pro">
-                    <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743431668/Photoroom_20250331_73312_a.m._wlq27x.jpg" alt="product2" width="200px">
-                    <div class="des">
-                        <span><strong>FC Barcelona 24/25 Home</strong></span>
-                        <h5>
-                        </h5>
-                        <h4>$949.00 + Envio Gratis</h4><br><br>
-                    </div>
-                    <a href="https://buy.stripe.com/bIYeWfbOMexd48g144" target="_blank"><i class="fal fa-shopping-cart cart"></i>
+    <div class="jersey-grid">
+
+        <div class="jersey-card">
+            <a href="https://buy.stripe.com/bIYeWfbOMexd48g144" target="_blank">
+                <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743431668/Photoroom_20250331_73312_a.m._wlq27x.jpg" alt="FC Barcelona 24/25 Home">
+                <div class="jersey-info">
+                    <span><strong>FC Barcelona 24/25 Home</strong></span>
+                    <h4>$949.00 + Envío Gratis</h4>
                     <img class="cart" src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1737499099/image_ld4qev.jpg">
-                    </a>
                 </div>
-                </a> 
+            </a>
         </div>
-        <div class="pro-container">
-            <a class="dunks-product" href="https://buy.stripe.com/cN2cO79GEcp5dIQ004" target="_blank">
-                <div class="pro">
-                    <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743091838/Photoroom_20250327_82112_a.m._ccoemw.jpg" alt="product2" width="200px">
-                    <div class="des">
-                        <span><strong>FC Barcelona 05/06 #30 Messi</strong></span>
-                        <h5>
-                        </h5>
-                        <h4>$949.00 + Envio Gratis</h4><br><br>
-                    </div>
-                    <a href="checkout-p4.html" target="_blank"><i class="fal fa-shopping-cart cart"></i>
+
+        <div class="jersey-card">
+            <a href="https://buy.stripe.com/cN2cO79GEcp5dIQ004" target="_blank">
+                <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743091838/Photoroom_20250327_82112_a.m._ccoemw.jpg" alt="FC Barcelona 05/06 #30 Messi">
+                <div class="jersey-info">
+                    <span><strong>FC Barcelona 05/06 #30 Messi</strong></span>
+                    <h4>$949.00 + Envío Gratis</h4>
                     <img class="cart" src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1737499099/image_ld4qev.jpg">
-                    </a>
                 </div>
-                </a> 
+            </a>
         </div>
-        <div class="pro-container">
-            <a class="dunks-product" href="https://buy.stripe.com/cN2aFZ4mk1KrawE4gh" target="_blank">
-                <div class="pro">
-                    <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743091838/Photoroom_20250327_84514_a.m._neeyrl.jpg" alt="product2" width="200px">
-                    <div class="des">
-                        <span><strong>Real Madrid 24/25 Home</strong></span>
-                        <h5>
-                        </h5>
-                        <h4>$949.00 + Envio Gratis</h4><br><br>
-                    </div>
-                    <a href="checkout-p4.html" target="_blank"><i class="fal fa-shopping-cart cart"></i>
+
+        <div class="jersey-card">
+            <a href="https://buy.stripe.com/cN2aFZ4mk1KrawE4gh" target="_blank">
+                <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743091838/Photoroom_20250327_84514_a.m._neeyrl.jpg" alt="Real Madrid 24/25 Home">
+                <div class="jersey-info">
+                    <span><strong>Real Madrid 24/25 Home</strong></span>
+                    <h4>$949.00 + Envío Gratis</h4>
                     <img class="cart" src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1737499099/image_ld4qev.jpg">
-                    </a>
                 </div>
-                </a> 
+            </a>
         </div>
-        <div class="pro-container">
-            <a class="dunks-product" href="https://buy.stripe.com/aEU5lF5qo74L5ck6or" target="_blank">
-                <div class="pro">
-                    <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743091838/Photoroom_20250327_83152_a.m._ppbnu5.jpg" alt="product2" width="200px">
-                    <div class="des">
-                        <span><strong>FC Barcelona 2015 Messi UCL Messi</strong></span>
-                        <h5>
-                        </h5>
-                        <h4>$949.00 + Envio Gratis</h4><br><br>
-                    </div>
-                    <a href="checkout-p4.html" target="_blank"><i class="fal fa-shopping-cart cart"></i>
+
+        <div class="jersey-card">
+            <a href="https://buy.stripe.com/aEU5lF5qo74L5ck6or" target="_blank">
+                <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743091838/Photoroom_20250327_83152_a.m._ppbnu5.jpg" alt="FC Barcelona 2015 UCL Messi">
+                <div class="jersey-info">
+                    <span><strong>FC Barcelona 2015 UCL Messi</strong></span>
+                    <h4>$949.00 + Envío Gratis</h4>
                     <img class="cart" src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1737499099/image_ld4qev.jpg">
-                    </a>
                 </div>
-                </a> 
+            </a>
         </div>
-        <div class="pro-container">
-            <a class="dunks-product" href="https://buy.stripe.com/cN229t4mkdt99sA5km" target="_blank">
-                <div class="pro">
-                    <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743091838/Photoroom_20250327_83900_a.m._dcepvr.jpg" alt="product2" width="200px">
-                    <div class="des">
-                        <span><strong>Vintage Real Madrid 99/00</strong></span>
-                        <h5>
-                        </h5>
-                        <h4>$949.00 + Envio Gratis</h4><br><br>
-                    </div>
-                    <a href="checkout-p4.html" target="_blank"><i class="fal fa-shopping-cart cart"></i>
+
+        <div class="jersey-card">
+            <a href="https://buy.stripe.com/cN229t4mkdt99sA5km" target="_blank">
+                <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743091838/Photoroom_20250327_83900_a.m._dcepvr.jpg" alt="Vintage Real Madrid 99/00">
+                <div class="jersey-info">
+                    <span><strong>Vintage Real Madrid 99/00</strong></span>
+                    <h4>$949.00 + Envío Gratis</h4>
                     <img class="cart" src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1737499099/image_ld4qev.jpg">
-                    </a>
                 </div>
-                </a> 
+            </a>
         </div>
-        <div class="pro-container">
-            <a class="dunks-product" href="https://buy.stripe.com/9AQ15p4mkexd2087sx" target="_blank">
-                <div class="pro">
-                    <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743091838/Photoroom_20250327_82949_a.m._rmdp60.jpg" alt="product2" width="200px">
-                    <div class="des">
-                        <span><strong>ManU 07 CR7</strong></span>
-                        <h5>
-                        </h5>
-                        <h4>$949.00 + Envio Gratis</h4><br><br>
-                    </div>
-                    <a href="checkout-p4.html" target="_blank"><i class="fal fa-shopping-cart cart"></i>
+
+        <div class="jersey-card">
+            <a href="https://buy.stripe.com/9AQ15p4mkexd2087sx" target="_blank">
+                <img src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1743091838/Photoroom_20250327_82949_a.m._rmdp60.jpg" alt="ManU 07 CR7">
+                <div class="jersey-info">
+                    <span><strong>ManU 07 CR7</strong></span>
+                    <h4>$949.00 + Envío Gratis</h4>
                     <img class="cart" src="https://res.cloudinary.com/dhvpdrd8m/image/upload/v1737499099/image_ld4qev.jpg">
-                    </a>
                 </div>
-                </a> 
+            </a>
         </div>
+
     </div>
-    </section>
+</section>
     
         <section class="description-jerseys">
             <h1><strong>✒️ Descripción</strong></h1><br>
