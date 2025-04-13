@@ -292,6 +292,90 @@
   margin-top: 10px;
 }
 
+.jersey-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    padding-top: 20px;
+    justify-items: center;
+}
+
+.jersey-card {
+    width: 100%;
+    max-width: 180px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    text-align: left;
+}
+
+.jersey-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.jersey-info {
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.jersey-info span {
+    display: block;
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.jersey-info h4 {
+    font-size: 13px;
+    color: #444;
+    font-weight: normal;
+    margin: 0;
+    text-decoration: none;
+}
+
+.jersey-info .cart {
+    width: 22px;
+    height: 22px;
+    margin-top: 10px;
+}
+
+.jersey-card a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto sin usar el azul de los enlaces */
+}
+
+/* Responsive: en pantallas más grandes, mostrar 3 o más por fila */
+@media screen and (min-width: 768px) {
+    .jersey-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .jersey-card {
+        max-width: 220px;
+    }
+
+    .jersey-info span {
+        font-size: 14px;
+    }
+
+    .jersey-info h4 {
+        font-size: 14px;
+    }
+
+    .jersey-info .cart {
+        width: 25px;
+        height: 25px;
+    }
+}
+
         /* Estilos responsive para dispositivos pequeños */
         @media (max-width: 600px) {
           .hero-jerseys {
