@@ -154,14 +154,14 @@
           color: black;
           background-color: rgb(255, 255, 255);
           border-radius: 10px;
-          width: 90%;
+          width: fit-content;
           margin: auto;
           margin-top: 20px;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         .feedback-stars-div h2, .feedback-stars-div h3, .feedback-stars-div a {
           display: inline; /* Makes both h3 and h4 inline */
-          margin: 0 5px; /* Adds spacing between them */
+          margin: 0 7px; /* Adds spacing between them */
           text-decoration: none;
           color: black;
         }
@@ -291,12 +291,12 @@
   display: block;
   margin-top: 10px;
 }
+
 .jersey-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 10px;
     padding: 20px;
-    padding-top: 20px;
     justify-items: center;
 }
 
@@ -351,6 +351,10 @@
     color: inherit; /* Mantiene el color del texto sin usar el azul de los enlaces */
 }
 
+.section-p1 {
+  padding-bottom: 0;
+}
+
 /* Responsive: en pantallas más grandes, mostrar 3 o más por fila */
 @media screen and (min-width: 768px) {
     .jersey-grid {
@@ -374,7 +378,6 @@
         height: 25px;
     }
 }
-
 
         /* Estilos responsive para dispositivos pequeños */
         @media (max-width: 600px) {
@@ -472,7 +475,7 @@
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="jerseys-new.html">Jerseys</a></li>
+            <li><a href="jerseys-catalog.html">Jerseys</a></li>
             <li><a href="sneakers.html">Sneakers</a></li>
         </ul>
     </nav>
@@ -519,7 +522,7 @@
             <h2>Football Jerseys / Retro & Actual</h2> <br>
             <h2 style="margin-bottom: 10px;">Talla M</h2>
             <h3>$949.00 MXN + Envio Gratis</h3>
-        
+    </div>
     <section id="product1" class="section-p1">
     <div class="jersey-grid">
 
@@ -585,7 +588,7 @@
 
     </div>
 </section>
-    
+
         <section class="description-jerseys">
             <h1><strong>✒️ Descripción</strong></h1><br>
             <p>⚽️ Jerseys de futbol Retro y Actuales de alta calidad, confeccionados con los mejores materiales y tecnología de punta. <br>🔹 Disponibles Solamente en Tallas M. 
@@ -669,6 +672,7 @@
               <button type="submit">Agregar Reseña</button>
             </form>
           </div>
+          
 
       <script>
         let currentIndex = 0;
