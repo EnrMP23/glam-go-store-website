@@ -751,7 +751,6 @@
   // Cargar reseñas desde Firebase
   reviewsRef.on('value', (snapshot) => {
     const reviewsContainer = document.getElementById('reviews-container');
-    reviewsContainer.innerHTML = ''; // Limpia el contenedor
     const reviews = snapshot.val();
     for (const id in reviews) {
       const review = reviews[id];
