@@ -748,38 +748,44 @@
   // Referencia a la base de datos
   const reviewsRef = db.ref('reviews');
 
-  // Cargar reseñas existentes desde reviews.json a Firebase (solo ejecutar una vez)
-  fetch('reviews.json')
-    .then(response => response.json())
-    .then(reviews => {
-      reviews.forEach(review => {
-        reviewsRef.push(review)
-          .then(() => console.log('Reseña subida:', review))
-          .catch(error => console.error('Error al subir la reseña:', error));
-      });
-    })
-    .catch(error => console.error('Error al cargar reviews.json:', error));
-
-  // Cargar reseñas desde Firebase y mostrarlas en la página
-  reviewsRef.on('value', (snapshot) => {
+  // Cargar reseñas desde reviews.json y Firebase
+  function loadReviews() {
     const reviewsContainer = document.getElementById('reviews-container');
     reviewsContainer.innerHTML = ''; // Limpia el contenedor
-    const reviews = snapshot.val();
-    if (reviews) {
-      for (const id in reviews) {
-        const review = reviews[id];
-        const reviewHTML = `
-          <div class="feedback-div">
-            <p>🔹 ${review.name} - "${review.comment}"</p>
-            <span>➖ ${review.name} ${'⭐️'.repeat(review.rating)}</span>
-          </div>
-        `;
-        reviewsContainer.innerHTML += reviewHTML;
-      }
-    } else {
-      reviewsContainer.innerHTML = '<p>No hay reseñas disponibles.</p>';
-    }
-  });
+
+    // Cargar reseñas desde reviews.json
+    fetch('reviews.json')
+      .then(response => response.json())
+      .then(localReviews => {
+        localReviews.forEach(review => {
+          const reviewHTML = `
+            <div class="feedback-div">
+              <p>🔹 ${review.name} - "${review.comment}"</p>
+              <span>➖ ${review.name} ${'⭐️'.repeat(review.rating)}</span>
+            </div>
+          `;
+          reviewsContainer.innerHTML += reviewHTML;
+        });
+
+        // Cargar reseñas desde Firebase
+        reviewsRef.on('value', (snapshot) => {
+          const firebaseReviews = snapshot.val();
+          if (firebaseReviews) {
+            for (const id in firebaseReviews) {
+              const review = firebaseReviews[id];
+              const reviewHTML = `
+                <div class="feedback-div">
+                  <p>🔹 ${review.name} - "${review.comment}"</p>
+                  <span>➖ ${review.name} ${'⭐️'.repeat(review.rating)}</span>
+                </div>
+              `;
+              reviewsContainer.innerHTML += reviewHTML;
+            }
+          }
+        });
+      })
+      .catch(error => console.error('Error al cargar reviews.json:', error));
+  }
 
   // Cargar números de orden válidos desde orders.json
   let validOrderNumbers = [];
@@ -820,12 +826,16 @@
       .then(() => {
         reviewForm.reset();
         alert('¡Gracias por tu reseña!');
+        loadReviews(); // Recargar las reseñas
       })
       .catch((error) => {
         console.error('Error al guardar la reseña:', error);
         alert('Hubo un problema al guardar tu reseña. Inténtalo de nuevo.');
       });
   });
+
+  // Cargar las reseñas al cargar la página
+  loadReviews();
 </script>
 
     <footer id="contact">
