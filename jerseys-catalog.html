@@ -765,6 +765,15 @@
     }
   });
 
+  // Cargar números de orden válidos desde orders.json
+  let validOrderNumbers = [];
+  fetch('orders.json')
+    .then(response => response.json())
+    .then(data => {
+      validOrderNumbers = data;
+    })
+    .catch(error => console.error('Error al cargar los números de orden:', error));
+
   // Manejar el envío del formulario
   const reviewForm = document.getElementById('review-form');
   reviewForm.addEventListener('submit', function (event) {
