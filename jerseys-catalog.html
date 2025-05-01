@@ -748,15 +748,21 @@
   // Referencia a la base de datos
   const reviewsRef = db.ref('reviews');
 
-  // Cargar reseñas desde reviews.json y Firebase
+  // Función para cargar reseñas desde reviews.json y Firebase
   function loadReviews() {
     const reviewsContainer = document.getElementById('reviews-container');
     reviewsContainer.innerHTML = ''; // Limpia el contenedor
 
     // Cargar reseñas desde reviews.json
     fetch('reviews.json')
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Error al cargar reviews.json: ${response.statusText}`);
+        }
+        return response.json();
+      })
       .then(localReviews => {
+        // Mostrar reseñas locales
         localReviews.forEach(review => {
           const reviewHTML = `
             <div class="feedback-div">
@@ -784,15 +790,21 @@
           }
         });
       })
-      .catch(error => console.error('Error al cargar reviews.json:', error));
+      .catch(error => console.error('Error al cargar las reseñas:', error));
   }
 
   // Cargar números de orden válidos desde orders.json
   let validOrderNumbers = [];
   fetch('orders.json')
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Error al cargar orders.json: ${response.statusText}`);
+      }
+      return response.json();
+    })
     .then(data => {
       validOrderNumbers = data;
+      console.log('Números de orden válidos cargados:', validOrderNumbers);
     })
     .catch(error => console.error('Error al cargar los números de orden:', error));
 
