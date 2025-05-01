@@ -776,31 +776,39 @@
   // Manejar el envío del formulario
   const reviewForm = document.getElementById('review-form');
   reviewForm.addEventListener('submit', function (event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    // Obtener valores del formulario
-    const fullName = document.getElementById('full-name').value;
-    const orderNumber = document.getElementById('order-number').value;
-    const reviewComment = document.getElementById('review-comment').value;
-    const starRating = document.querySelector('input[name="rating"]:checked').value;
+  // Obtener valores del formulario
+  const fullName = document.getElementById('full-name').value;
+  const orderNumber = document.getElementById('order-number').value;
+  const reviewComment = document.getElementById('review-comment').value;
+  const starRating = document.querySelector('input[name="rating"]:checked').value;
 
-    // Crear una nueva reseña
-    const newReview = {
-      name: fullName,
-      orderNumber: orderNumber,
-      comment: reviewComment,
-      rating: parseInt(starRating)
-    };
+  // Validar el número de orden
+  if (!validOrderNumbers.includes(orderNumber)) {
+    alert('El número de orden ingresado no es válido. Por favor, verifica tu número de orden.');
+    return;
+  }
 
-    // Guardar la reseña en Firebase
-    reviewsRef.push(newReview);
+  // Crear una nueva reseña
+  const newReview = {
+    name: fullName,
+    orderNumber: orderNumber,
+    comment: reviewComment,
+    rating: parseInt(starRating)
+  };
 
-    // Limpiar el formulario
-    reviewForm.reset();
-
-    // Mostrar mensaje de éxito
-    alert('¡Gracias por tu reseña!');
-  });
+  // Guardar la reseña en Firebase
+  reviewsRef.push(newReview)
+    .then(() => {
+      reviewForm.reset();
+      alert('¡Gracias por tu reseña!');
+    })
+    .catch((error) => {
+      console.error('Error al guardar la reseña:', error);
+      alert('Hubo un problema al guardar tu reseña. Inténtalo de nuevo.');
+    });
+});
 </script>
 
     <footer id="contact">
