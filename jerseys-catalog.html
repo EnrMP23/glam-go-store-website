@@ -685,16 +685,16 @@
           
               <label for="star-rating">Rating:</label>
               <div id="star-rating">
-  <input type="radio" id="star-5" name="rating" value="5">
-  <label for="star-5">⭐️</label>
-  <input type="radio" id="star-4" name="rating" value="4">
-  <label for="star-4">⭐️</label>
-  <input type="radio" id="star-3" name="rating" value="3">
-  <label for="star-3">⭐️</label>
-  <input type="radio" id="star-2" name="rating" value="2">
-  <label for="star-2">⭐️</label>
-  <input type="radio" id="star-1" name="rating" value="1">
-  <label for="star-1">⭐️</label>
+                <input type="radio" id="star-5" name="rating" value="5">
+                <label for="star-5">⭐️</label>
+                <input type="radio" id="star-4" name="rating" value="4">
+                <label for="star-4">⭐️</label>
+                <input type="radio" id="star-3" name="rating" value="3">
+                <label for="star-3">⭐️</label>
+                <input type="radio" id="star-2" name="rating" value="2">
+                <label for="star-2">⭐️</label>
+                <input type="radio" id="star-1" name="rating" value="1">
+                <label for="star-1">⭐️</label>
               </div>
           
               <button type="submit">Agregar Reseña</button>
@@ -725,6 +725,16 @@
         function nextSlide() {
           showSlide(currentIndex + 1);
         }
+        </script>
+
+        <script>
+        const feedbackDropdown = document.querySelector('.feedback-dropdown');
+feedbackDropdown.addEventListener('toggle', (event) => {
+  if (event.target.open) {
+    loadReviews();
+  }
+});
+        </script>
         </script>
 
 <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
@@ -760,7 +770,7 @@ function loadReviews() {
       return response.json();
     })
     .then(localReviews => {
-      // Mostrar reseñas locales
+      console.log('Reseñas locales cargadas:', localReviews);
       localReviews.forEach(review => {
         const reviewHTML = `
           <div class="feedback-div">
@@ -774,6 +784,7 @@ function loadReviews() {
       // Cargar reseñas desde Firebase
       reviewsRef.on('value', (snapshot) => {
         const firebaseReviews = snapshot.val();
+        console.log('Reseñas de Firebase cargadas:', firebaseReviews);
         if (firebaseReviews) {
           for (const id in firebaseReviews) {
             const review = firebaseReviews[id];
