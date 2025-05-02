@@ -728,143 +728,42 @@
         </script>
 
         <!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js"></script>
+      <script>
+        // Elementos del DOM
+        const reviewsContainer = document.getElementById('reviews-container');
 
-<script>
-  // Configuración de Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyCU3A7dD35_QY7PoiXOZ4ieU_4oGoa8oOE",
-  authDomain: "basedatosglam.firebaseapp.com",
-  databaseURL: "https://basedatosglam-default-rtdb.firebaseio.com",
-  projectId: "basedatosglam",
-  storageBucket: "basedatosglam.firebasestorage.app",
-  messagingSenderId: "218660011672",
-  appId: "1:218660011672:web:05054af169d95a08755aed"
-};
-
-// Inicializa Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const db = firebase.database();
-const reviewsRef = db.ref('reviews');
-
-// Elementos del DOM
-const reviewsContainer = document.getElementById('reviews-container');
-const reviewForm = document.getElementById('review-form');
-
-// Variable para almacenar los números de orden válidos
-let validOrderNumbers = [];
-
-// Cargar números de orden válidos desde orders.json
-fetch('orders.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`Error al cargar orders.json: ${response.statusText}`);
-    }
-    return response.json();
-  })
-  .then(data => {
-    validOrderNumbers = data;
-    console.log('Números de orden válidos cargados:', validOrderNumbers);
-  })
-  .catch(error => console.error('Error al cargar los números de orden:', error));
-
-// Cargar reseñas base desde reviews.json
-function loadLocalReviews() {
-  fetch('reviews.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Error al cargar reviews.json: ${response.statusText}`);
-      }
-      return response.json();
-    })
-    .then(localReviews => {
-      localReviews.forEach(review => {
-        const reviewHTML = `
+        // Cargar reseñas base desde reviews.json al hacer clic en "Ver más reviews"
+        function loadLocalReviews() {
+          fetch('reviews.json')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Error al cargar reviews.json: ${response.statusText}`);
+          }
+          return response.json();
+        })
+        .then(localReviews => {
+          reviewsContainer.innerHTML = ''; // Limpia el contenedor antes de agregar nuevas reseñas
+          localReviews.forEach(review => {
+            const reviewHTML = `
           <div class="feedback-div">
             <p>🔹 ${review.name} - "${review.comment}"</p>
             <span>➖ ${review.name} ${'⭐️'.repeat(review.rating)}</span>
           </div>
-        `;
-        reviewsContainer.innerHTML += reviewHTML;
-      });
-    })
-    .catch(error => console.error('Error al cargar reviews.json:', error));
-}
+            `;
+            reviewsContainer.innerHTML += reviewHTML;
+          });
+        })
+        .catch(error => console.error('Error al cargar reviews.json:', error));
+        }
 
-// Mostrar reseñas nuevas desde Firebase en tiempo real
-function listenToFirebaseReviews() {
-  reviewsRef.on('child_added', (snapshot) => {
-    const review = snapshot.val();
-    const reviewHTML = `
-      <div class="feedback-div">
-        <p>🔹 ${review.name} - "${review.comment}"</p>
-        <span>➖ ${review.name} ${'⭐️'.repeat(review.rating)}</span>
-      </div>
-    `;
-    // Las nuevas reseñas van arriba
-    reviewsContainer.innerHTML = reviewHTML + reviewsContainer.innerHTML;
-  });
-}
-
-// Manejar el envío del formulario
-reviewForm.addEventListener('submit', function (event) {
-  event.preventDefault();
-
-  // Obtener valores del formulario
-  const fullName = document.getElementById('full-name').value.trim();
-  const orderNumber = document.getElementById('order-number').value.trim();
-  const reviewComment = document.getElementById('review-comment').value.trim();
-  const starRating = document.querySelector('input[name="rating"]:checked')?.value;
-
-  // Validar que todos los campos estén completos
-  if (!fullName || !orderNumber || !reviewComment || !starRating) {
-    alert('Por favor, completa todos los campos.');
-    return;
-  }
-
-  // Validar el número de orden
-  if (!validOrderNumbers.includes(orderNumber)) {
-    alert('El número de orden ingresado no es válido. Verifica tu número de orden.');
-    return;
-  }
-
-  // Crear una nueva reseña
-  const newReview = {
-    name: fullName,
-    orderNumber: orderNumber,
-    comment: reviewComment,
-    rating: parseInt(starRating)
-  };
-
-  // Guardar la reseña en Firebase
-  reviewsRef.push(newReview)
-    .then(() => {
-      reviewForm.reset();
-      alert('¡Gracias por tu reseña!');
-    })
-    .catch((error) => {
-      console.error('Error al guardar la reseña:', error);
-      alert('Hubo un problema al guardar tu reseña. Inténtalo de nuevo.');
-    });
-});
-
-// Cargar las reseñas cuando se abre el dropdown
-const feedbackDropdown = document.querySelector('.feedback-dropdown');
-feedbackDropdown.addEventListener('toggle', () => {
-  if (feedbackDropdown.open) {
-    reviewsContainer.innerHTML = ''; // Limpia para evitar duplicados
-    loadLocalReviews();
-    listenToFirebaseReviews();
-  }
-});
-
-// También carga al abrir la página si ya está abierto
-if (feedbackDropdown.open) {
-  loadLocalReviews();
-  listenToFirebaseReviews();
-}
-</script>
+        // Manejar el evento de apertura del dropdown
+        const feedbackDropdown = document.querySelector('.feedback-dropdown');
+        feedbackDropdown.addEventListener('toggle', () => {
+          if (feedbackDropdown.open) {
+        loadLocalReviews();
+          }
+        });
+      </script>
 
 
     <footer id="contact">
