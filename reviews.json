@@ -1,64 +1,1652 @@
-{
-  "reviews": {
-    "-N1a2b3c4d5e6f7g8h9i": {
+[
+    {
       "name": "Ana Lopez",
-      "orderNumber": "ORD12345",
       "comment": "Increíble calidad, llegó rápido y en perfectas condiciones.",
-      "rating": 5
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
     },
-    "-N1j2k3l4m5n6o7p8q9r": {
+    {
       "name": "Maria Perez",
-      "orderNumber": "10002",
       "comment": "El producto llegó en perfectas condiciones, muy recomendado.",
-      "rating": 5
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
     },
-    "-N1o2p3q4r5s6t7u8v9w": {
+    {
       "name": "Juan Martinez",
-      "orderNumber": "10003",
       "comment": "Gran calidad, superó mis expectativas.",
-      "rating": 5
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
     },
-    "-N1x2y3z4a5b6c7d8e9f": {
+    {
       "name": "Sofia Gomez",
-      "orderNumber": "10004",
       "comment": "El envío fue rápido y el producto es excelente.",
-      "rating": 5
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
     },
-    "-N1g2h3i4j5k6l7m8n9o": {
+    {
       "name": "Diego Torres",
-      "orderNumber": "10005",
       "comment": "Muy satisfecho con la compra, volveré a comprar.",
-      "rating": 5
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
     },
-    "-N1p2q3r4s5t6u7v8w9x": {
+    {
       "name": "Laura Sanchez",
-      "orderNumber": "10006",
       "comment": "El mejor lugar para jerseys retro, 100% recomendado.",
-      "rating": 5
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
     },
-    "-N1y2z3a4b5c6d7e8f9g": {
+    {
       "name": "Miguel Ramirez",
-      "orderNumber": "10007",
       "comment": "Excelente atención al cliente, resolvieron todas mis dudas.",
-      "rating": 5
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
     },
-    "-N1h2i3j4k5l6m7n8o9p": {
+    {
       "name": "Paola Fernandez",
-      "orderNumber": "10008",
       "comment": "La calidad es impresionante, vale cada peso.",
-      "rating": 5
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
     },
-    "-N1q2r3s4t5u6v7w8x9y": {
+    {
       "name": "Ricardo Morales",
-      "orderNumber": "10009",
       "comment": "Perfecto para regalar, mi hermano quedó encantado.",
-      "rating": 5
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
     },
-    "-N1z2a3b4c5d6e7f8g9h": {
+    {
       "name": "Andrea Castillo",
-      "orderNumber": "10010",
-      "comment": "la jersey es hermoso, llegó antes de lo esperado.",
-      "rating": 5
-    }
-  }
-}
+      "comment": "El jersey es hermoso, llegó antes de lo esperado.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Fernando Ruiz",
+      "comment": "Muy buena experiencia de compra, lo recomiendo.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Gabriela Torres",
+      "comment": "El diseño es increíble, me encantó.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Jorge Hernandez",
+      "comment": "El producto es de alta calidad, muy satisfecho.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Valeria Lopez",
+      "comment": "El mejor jersey que he comprado, lo amo.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Oscar Martinez",
+      "comment": "Gran servicio, el envío fue muy rápido.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Camila Gonzalez",
+      "comment": "El jersey es perfecto, lo recomiendo mucho.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Hector Ramirez",
+      "comment": "Muy buena calidad, el precio lo vale.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Isabel Vega",
+      "comment": "El jersey llegó en tiempo y es de excelente calidad.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Luis Morales",
+      "comment": "Muy satisfecho con la compra, lo recomiendo ampliamente.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Carolina Diaz",
+      "comment": "El diseño es único, me encantó.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Daniela Rios",
+      "comment": "El mejor jersey que he comprado, excelente calidad.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Francisco Lopez",
+      "comment": "Muy buena atención al cliente, resolvieron todas mis dudas.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Alejandro Torres",
+      "comment": "El envío fue rápido y el producto es excelente.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Monica Sanchez",
+      "comment": "Gran calidad, superó mis expectativas.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Roberto Castillo",
+      "comment": "Perfecto para regalar, mi hermano quedó encantado.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Lucia Ramirez",
+      "comment": "El jersey es hermoso, llegó antes de lo esperado.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Pablo Fernandez",
+      "comment": "Muy buena experiencia de compra, lo recomiendo.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Claudia Gomez",
+      "comment": "El diseño es increíble, me encantó.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Eduardo Ruiz",
+      "comment": "El producto es de alta calidad, muy satisfecho.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+      "name": "Patricia Lopez",
+      "comment": "El mejor jersey que he comprado, lo amo.",
+      "rating": "⭐️⭐️⭐️⭐️⭐️"
+    },
+    {
+        "name": "Javier Martinez",
+        "comment": "Gran servicio, el envío fue muy rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Natalia Gonzalez",
+        "comment": "El jersey es perfecto, lo recomiendo mucho.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Victor Ramirez",
+        "comment": "Muy buena calidad, el precio lo vale.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Carlos Lopez",
+        "comment": "Excelente producto, llegó en tiempo récord.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ana Rodriguez",
+        "comment": "Producto impecable, súper recomendado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mariana Hernandez",
+        "comment": "La atención fue de primera, sin duda compraré de nuevo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Luis Perez",
+        "comment": "Calidad insuperable y servicio rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Pedro Sanchez",
+        "comment": "El envío llegó sin problemas, muy contento con mi compra.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Sofia Ramirez",
+        "comment": "Un producto excelente y bien embalado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Daniel Fernandez",
+        "comment": "La experiencia de compra fue muy positiva.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Andrea Morales",
+        "comment": "¡Todo chido! Me encantó el servicio.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Francisco Jimenez",
+        "comment": "El producto cumplió con todas mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "David Castro",
+        "comment": "Muy satisfecho, lo recomiendo ampliamente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Elisa Vega",
+        "comment": "Calidad top y atención al cliente excepcional.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Sergio Rojas",
+        "comment": "Un servicio excelente, muy recomendable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Patricia Navarro",
+        "comment": "Superó mis expectativas, de verdad excelente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Oscar Dominguez",
+        "comment": "Llegó a tiempo y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Lucia Morales",
+        "comment": "Muy contenta con mi compra, lo volveré a pedir.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ricardo Torres",
+        "comment": "Producto de calidad y muy buen servicio.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Gabriela Fuentes",
+        "comment": "Excelente experiencia, sin duda compraré de nuevo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alejandro Delgado",
+        "comment": "Muy buen producto, llegó antes de lo esperado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Carmen Espinoza",
+        "comment": "Muy satisfecha, calidad garantizada.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Andres Romero",
+        "comment": "El servicio es de primera, sin duda recomendando.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Paula Vega",
+        "comment": "Me encantó, es justo lo que buscaba.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Roberto Cruz",
+        "comment": "Gran compra, superó mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mónica Aguirre",
+        "comment": "Producto excelente y servicio impecable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Fernando Mendoza",
+        "comment": "Calidad y servicio a la altura, ¡excelente!",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Diana Soto",
+        "comment": "Todo perfecto, volveré a comprar sin dudarlo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Miguel Renteria",
+        "comment": "La compra fue muy satisfactoria, de verdad recomiéndo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Verónica Lozano",
+        "comment": "Buen producto, excelente servicio.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Hector Morales",
+        "comment": "Servicio rápido y producto de calidad, la neta excelente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rosa Aguilar",
+        "comment": "Muy buena compra, el envío fue puntual.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Esteban Ponce",
+        "comment": "Producto de primera, muy recomendable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Lorena Cabrera",
+        "comment": "La calidad es insuperable, me encantó.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Emilio Serrano",
+        "comment": "Servicio y calidad de 10, la verdad muy buen producto.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rebeca Navarro",
+        "comment": "Producto perfecto, llegó muy rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Guillermo Quintana",
+        "comment": "La experiencia de compra fue excelente, súper recomendado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Irene Salinas",
+        "comment": "Muy satisfecha, servicio de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Julio Paredes",
+        "comment": "Excelente atención al cliente y calidad superior.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Claudia Rivas",
+        "comment": "Producto fenomenal, llegó en perfectas condiciones.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rafael Moreno",
+        "comment": "Muy buena compra, superó todas mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Marisol Orozco",
+        "comment": "Producto de gran calidad, envío rápido y seguro.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Jorge Herrera",
+        "comment": "La experiencia fue increíble, me encantó el producto.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Carolina Vega",
+        "comment": "Todo de maravilla, volveré a comprar sin dudarlo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Armando Ruiz",
+        "comment": "Servicio impecable y producto de alta calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Sonia Contreras",
+        "comment": "Muy satisfecho con mi compra, producto top.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ricardo Molina",
+        "comment": "La calidad es sobresaliente, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Bianca Carvajal",
+        "comment": "Servicio excelente, calidad garantizada.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Victor Hugo",
+        "comment": "Una experiencia de compra muy positiva y rápida.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Florencia Zamora",
+        "comment": "Muy contenta, producto y envío perfectos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Eduardo Herrera",
+        "comment": "Excelente compra, me sorprendió la rapidez del envío.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Claudia Molina",
+        "comment": "Muy buena calidad, producto perfecto para el día a día.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Marcos Rojas",
+        "comment": "Servicio inmejorable y producto de primera.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Verónica Salazar",
+        "comment": "El producto llegó en perfecto estado, súper recomendada.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Fernando Garza",
+        "comment": "La calidad es excelente, no me arrepiento de la compra.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Liliana Pineda",
+        "comment": "Muy satisfecha con mi compra, el envío fue rapidísimo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Armando Domínguez",
+        "comment": "De lujo, el producto cumplió con todo lo prometido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Sergia Lozano",
+        "comment": "Producto de excelente calidad y envío puntual.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Diego Campos",
+        "comment": "Muy buen servicio, la entrega fue más rápida de lo esperado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Adriana Cruz",
+        "comment": "El producto es justo lo que necesitaba, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alejandro Vega",
+        "comment": "¡De lujo! El envío llegó en un abrir y cerrar de ojos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Martha Torres",
+        "comment": "Calidad insuperable, volveré a comprar seguro.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mauricio Rios",
+        "comment": "Muy buen producto y excelente atención.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Lorena Estrada",
+        "comment": "Superó mis expectativas, producto y servicio top.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Pablo Carrillo",
+        "comment": "La experiencia de compra fue maravillosa, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Silvia Bravo",
+        "comment": "Producto de alta calidad y entrega sin contratiempos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "César Domínguez",
+        "comment": "Muy satisfecho, el producto llegó en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alicia Peña",
+        "comment": "El servicio es excepcional, lo recomiendo a todos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Felipe Navarro",
+        "comment": "Excelente compra, producto de gran calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Graciela Solís",
+        "comment": "El envío fue súper rápido, me encantó el producto.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Roberto Fuentes",
+        "comment": "Muy buena compra, calidad garantizada y servicio impecable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Estela Aguilar",
+        "comment": "Me encantó, llegó en tiempo récord y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Gustavo Velazquez",
+        "comment": "Producto excelente, me sorprendió la rapidez en la entrega.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Nuria Castillo",
+        "comment": "Todo perfecto, sin duda compraré de nuevo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ramon Ortega",
+        "comment": "Servicio de 10, producto increíble, la neta me encantó.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Bianca Domínguez",
+        "comment": "Excelente calidad, lo recomiendo a cualquiera.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Jorge Mendoza",
+        "comment": "Muy satisfecho con la compra, el envío fue impecable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Carolina Herrera",
+        "comment": "Producto y servicio excelentes, me encantó todo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ricardo Vega",
+        "comment": "Compra perfecta, calidad de producto y rapidez en el envío.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Elena Ramirez",
+        "comment": "Muy contenta con mi compra, el producto es de excelente calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Marcos Fuentes",
+        "comment": "El envío fue rapidísimo y el producto es de gran calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Teresa Rojas",
+        "comment": "Excelente atención y producto, quedé muy satisfecha.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alberto Solis",
+        "comment": "Muy buen servicio y producto de primera, de verdad excelente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Isabel Cortés",
+        "comment": "Calidad superior, envío rápido y atención de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Osvaldo Navarro",
+        "comment": "Me encantó, producto perfecto y servicio de calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Leticia Silva",
+        "comment": "La compra fue fantástica, sin problemas y con excelente atención.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Julian Herrera",
+        "comment": "Producto impecable y envío muy rápido, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Gloria Aguirre",
+        "comment": "Una experiencia de compra excelente, de verdad recomendable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Marco Duran",
+        "comment": "La calidad del producto es excelente, llegó muy rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Regina Ortiz",
+        "comment": "Muy satisfecha con mi compra, excelente calidad y servicio.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ricardo Solis",
+        "comment": "Compra excepcional, la calidad y rapidez del envío es inmejorable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Adriana Pacheco",
+        "comment": "Excelente servicio, el producto superó mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Hugo Serrano",
+        "comment": "Muy buen producto, llegó en perfectas condiciones.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Paola Cordero",
+        "comment": "El envío fue rápido y el producto es de alta calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ramiro Delgado",
+        "comment": "Producto de primera, calidad y servicio excepcionales.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Estela Medina",
+        "comment": "Muy contenta con mi compra, producto y envío excelentes.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Vicente Andrade",
+        "comment": "La calidad es inmejorable y el servicio muy eficiente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mariela Rivas",
+        "comment": "Excelente producto, llegó en tiempo récord.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Leonardo Lozano",
+        "comment": "Muy satisfecho, calidad y rapidez en cada detalle.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Cecilia Reyes",
+        "comment": "Producto impecable y envío de primera, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Andrés Contreras",
+        "comment": "Muy buena compra, la atención fue excepcional.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Verónica Luna",
+        "comment": "El producto llegó en perfectas condiciones, súper contenta.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Gustavo Mendoza",
+        "comment": "Excelente calidad y envío rapidísimo, me encantó.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Claudia Rueda",
+        "comment": "Producto de lujo, sin dudas lo volveré a comprar.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mario Rivas",
+        "comment": "Calidad y servicio excelentes, la neta recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Elena Cabrera",
+        "comment": "Muy buena experiencia, producto impecable y envío puntual.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Sebastián Acosta",
+        "comment": "El producto es fenomenal y llegó en tiempo récord.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Valeria Escobar",
+        "comment": "Súper contenta, la calidad es de primera.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Octavio Reyes",
+        "comment": "Una compra excelente, cumplió con todo lo esperado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Susana Marín",
+        "comment": "Producto de alta calidad y un servicio espectacular.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Marco Serrano",
+        "comment": "Muy satisfecho, la entrega fue rápida y segura.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Carmen Flores",
+        "comment": "Calidad inmejorable, estoy encantada con mi compra.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Néstor Salinas",
+        "comment": "El envío llegó a tiempo y el producto es excelente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Miranda García",
+        "comment": "Todo en orden, producto y servicio de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ramón Pacheco",
+        "comment": "Compra perfecta, me encantó la calidad del producto.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Aimee Roldán",
+        "comment": "Excelente atención, el producto superó mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Manuel Figueroa",
+        "comment": "Muy buen servicio y producto de alta calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Bárbara Quiroz",
+        "comment": "Producto perfecto, llegó rápido y en excelente estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Leandro Castillo",
+        "comment": "Muy satisfecho con mi compra, la calidad es inmejorable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Daniela Vega",
+        "comment": "Excelente servicio, producto de alta gama.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Antonio Zamora",
+        "comment": "La calidad del producto es sobresaliente y el envío rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Esther Miranda",
+        "comment": "Muy contenta con la compra, el servicio fue excepcional.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Roberto Escamilla",
+        "comment": "Producto de gran calidad, me encantó desde el primer momento.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Adolfo Ochoa",
+        "comment": "Excelente compra, el producto llegó muy rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ximena Solano",
+        "comment": "Muy satisfecha, la calidad y el servicio son excepcionales.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Iván Navarro",
+        "comment": "Producto excelente, la entrega fue súper rápida.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Miriam Galindo",
+        "comment": "Muy buena experiencia, lo recomiendo sin dudar.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rodrigo Luna",
+        "comment": "Producto de primera, el envío llegó en perfectas condiciones.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Claudia Peña",
+        "comment": "Servicio impecable y calidad de producto inmejorable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Samuel Ríos",
+        "comment": "Muy contento con mi compra, de lujo en todos los aspectos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Lourdes Velázquez",
+        "comment": "El producto es de excelente calidad y el servicio impecable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Guillermo Paredes",
+        "comment": "Compra segura, el envío fue rápido y el producto perfecto.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Estefanía Carvajal",
+        "comment": "Muy satisfecha, la calidad y rapidez del envío son destacables.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mauricio Peña",
+        "comment": "Excelente atención y producto de alta calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Paula Rangel",
+        "comment": "Producto impecable, llegó en tiempo récord y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Nicolás Bravo",
+        "comment": "Muy buena compra, el envío fue súper rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Marta Soto",
+        "comment": "Calidad superior, me encantó el servicio y el producto.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Roberto Andrade",
+        "comment": "Excelente experiencia de compra, lo recomiendo ampliamente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Fabiola Contreras",
+        "comment": "El producto es de primera, estoy muy satisfecha.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Manuel Salazar",
+        "comment": "Muy buena calidad y un servicio excepcional, la neta está chido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rosa Molina",
+        "comment": "Excelente producto, superó todas mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Enrique Serrano",
+        "comment": "Muy satisfecho, la compra fue sin contratiempos y de calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Juana Rosales",
+        "comment": "Producto de alta gama, llegó rápido y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ivette Rojas",
+        "comment": "Una experiencia de compra excelente, sin duda lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Héctor Vargas",
+        "comment": "Producto impecable y servicio rápido, la calidad es top.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Carla Domínguez",
+        "comment": "Muy contenta con mi compra, el envío fue puntual.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Omar Cárdenas",
+        "comment": "Excelente calidad, producto y servicio de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Beatriz Alvarado",
+        "comment": "La compra fue muy satisfactoria, el producto es increíble.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Damián Fuentes",
+        "comment": "Muy buena experiencia, me encantó la rapidez del envío.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Soledad Ortega",
+        "comment": "Producto de gran calidad y atención excelente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rogelio Roldán",
+        "comment": "Muy satisfecho con mi compra, llegó en tiempo récord.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mariana Domínguez",
+        "comment": "Producto excelente y servicio impecable, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Pablo García",
+        "comment": "La calidad es insuperable y el envío muy rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Fernanda Martínez",
+        "comment": "Muy contenta con mi compra, de verdad lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alfredo Luna",
+        "comment": "El producto llegó en perfecto estado, muy buena calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Noemi Salinas",
+        "comment": "Excelente atención y calidad, sin dudas volveré a comprar.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Hugo Serrano",
+        "comment": "Producto de alta calidad y servicio rápido, quedé encantado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Lourdes Morales",
+        "comment": "Muy buena compra, la atención al cliente fue de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Oswaldo Torres",
+        "comment": "El envío fue rápido y el producto de excelente calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Xiomara Chávez",
+        "comment": "Muy satisfecha, el servicio fue de primera y el producto top.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Bruno Pacheco",
+        "comment": "Producto perfecto, llegó en tiempo récord, de 10.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alicia Gómez",
+        "comment": "La compra fue excelente, sin problemas y con calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Guillermo Vázquez",
+        "comment": "Muy buen servicio y producto de alta calidad, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Tatiana Montoya",
+        "comment": "Calidad y atención insuperables, me encantó el producto.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ramón Morales",
+        "comment": "El producto llegó en perfecto estado, muy satisfecho.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Estela Guzmán",
+        "comment": "Compra segura, excelente calidad y envío rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Adrián Rojas",
+        "comment": "Muy buena experiencia, el producto superó mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Liliana Rivera",
+        "comment": "Servicio y producto de primera, de verdad lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Marcos Aguilar",
+        "comment": "Excelente calidad, el envío fue muy rápido y seguro.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Fátima Bravo",
+        "comment": "Muy satisfecha, producto de lujo y atención excelente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Felipe Rivas",
+        "comment": "Calidad insuperable, me encantó la rapidez del envío.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Cecilia Mendoza",
+        "comment": "Producto perfecto, servicio rápido y atención de primera.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Dario Solano",
+        "comment": "Muy buena compra, quedé satisfecho con la calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Margarita Ponce",
+        "comment": "Excelente experiencia, el producto es de alta calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Arturo Cruz",
+        "comment": "Producto de primera, llegó en tiempo récord y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Graciela Figueroa",
+        "comment": "Muy contenta con mi compra, la calidad es excepcional.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Santiago Rangel",
+        "comment": "Excelente producto y servicio, lo recomiendo ampliamente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Verónica Treviño",
+        "comment": "La compra fue perfecta, producto y servicio de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ignacio Carvajal",
+        "comment": "Muy satisfecho, la calidad es top y el envío rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Paulina Castañeda",
+        "comment": "Producto excelente, llegó en tiempo récord, ¡bien chido!",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Esteban Orozco",
+        "comment": "Excelente calidad y atención, estoy muy satisfecho.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rebeca Hernández",
+        "comment": "Muy buena compra, el producto es de primera calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Julio Aguilar",
+        "comment": "El servicio fue rápido y el producto llegó en perfectas condiciones.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Viviana Flores",
+        "comment": "Producto impecable, la calidad es sobresaliente y el envío rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Felipe Duarte",
+        "comment": "Excelente experiencia, de lujo en todos los aspectos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Gloria Padilla",
+        "comment": "Muy satisfecha, el producto llegó en tiempo récord y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Joaquín Bravo",
+        "comment": "Producto de alta calidad y servicio impecable, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Nadia Quiroz",
+        "comment": "Muy buena compra, la atención fue de primera.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Samuel Cortés",
+        "comment": "La calidad del producto es insuperable, y el envío muy rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Aurora Medina",
+        "comment": "Excelente atención y producto, sin duda lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Raúl Fajardo",
+        "comment": "Muy contento con mi compra, el servicio es de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Cintia Durán",
+        "comment": "Producto impecable, llegó en tiempo récord, lo recomiendo ampliamente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Leopoldo Vargas",
+        "comment": "Muy satisfecho, la calidad y la rapidez del envío son excepcionales.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Estela Robles",
+        "comment": "Compra excelente, producto de primera y servicio de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Héctor Bravo",
+        "comment": "La calidad es inmejorable, me encantó el producto y el servicio.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Nicolasa Guerrero",
+        "comment": "Muy buena experiencia de compra, lo recomiendo a todos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Eduardo Ramos",
+        "comment": "Excelente atención, el producto llegó en perfectas condiciones.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Valeria Quintana",
+        "comment": "Muy satisfecha, la calidad y el servicio superaron mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Andrés Espinoza",
+        "comment": "Producto de alta gama, llegó rápido y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "María Ledesma",
+        "comment": "Una experiencia de compra excelente, lo recomiendo sin dudar.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Oscar Serrano",
+        "comment": "Muy buena calidad y envío rápido, sin duda de 10.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Teresa Aguirre",
+        "comment": "Producto excelente, llegó en tiempo récord, ¡qué chulada!",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rodolfo Navarro",
+        "comment": "La calidad es insuperable, y el servicio de primera.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Monserrat Valdez",
+        "comment": "Muy contenta con mi compra, el envío fue de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Germán Cordero",
+        "comment": "Producto impecable, la experiencia de compra fue excelente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Leticia Rosales",
+        "comment": "Calidad de primera, me encantó la rapidez en la entrega.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Iván Estrada",
+        "comment": "Muy buena compra, servicio rápido y atención de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Miranda Delgado",
+        "comment": "Producto de alta calidad, llegó en tiempo récord.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Fabián Camacho",
+        "comment": "Excelente atención y producto, la calidad es top.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Carolina Ponce",
+        "comment": "Muy satisfecha, el producto llegó en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Joaquina Mora",
+        "comment": "Compra excelente, de lujo en todos los aspectos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Esteban Ochoa",
+        "comment": "Producto y servicio de primera, muy recomendable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mariana Reyes",
+        "comment": "La calidad es excelente y el envío rapidísimo, la neta me encantó.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rogelio Navarro",
+        "comment": "Muy buen producto, llegó en tiempo récord y sin contratiempos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Liliana Guzmán",
+        "comment": "Excelente compra, la calidad y el servicio son inmejorables.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alonso Rivas",
+        "comment": "Producto de primera, llegó rápido y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Nora Fuentes",
+        "comment": "Muy satisfecha con mi compra, la calidad es sobresaliente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Roberto Carballo",
+        "comment": "Excelente atención y producto, cumplió con todas mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Amanda Pineda",
+        "comment": "Muy buena compra, el envío fue rápido y seguro.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mauricio Soto",
+        "comment": "Producto excelente, la experiencia de compra fue de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alejandra Mena",
+        "comment": "Calidad insuperable, me encantó la rapidez del envío.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Guillermo Arce",
+        "comment": "Muy contento con mi compra, producto y servicio de primera.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rebeca Quintana",
+        "comment": "Excelente producto, llegó en tiempo récord y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Feliciano Duarte",
+        "comment": "Muy buena compra, la calidad del producto es superior.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Patricia Rosas",
+        "comment": "La experiencia de compra fue excelente, lo recomiendo sin dudar.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Eduardo Barrera",
+        "comment": "Producto impecable y servicio de lujo, muy satisfecho.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Melisa Fuentes",
+        "comment": "Muy satisfecha, la atención fue excelente y el envío rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rubén Roldán",
+        "comment": "Calidad inmejorable, producto y servicio de primera, la neta chingón.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Verónica Sandoval",
+        "comment": "Producto excelente, llegó en tiempo récord y superó mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Fabián Luna",
+        "comment": "Muy buena compra, la calidad es excepcional y el envío rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Sergio Bravo",
+        "comment": "Excelente atención, el producto llegó en perfectas condiciones.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Angela Molina",
+        "comment": "Muy satisfecha con mi compra, de lujo en todos los aspectos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Omar Nájera",
+        "comment": "Producto de alta calidad y envío rapidísimo, la calidad es top.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Reina Aguirre",
+        "comment": "Compra excelente, producto impecable y servicio de primera.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Javier Orozco",
+        "comment": "Muy buena experiencia de compra, lo recomiendo sin dudarlo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Daniela Carreón",
+        "comment": "El producto llegó en perfecto estado, muy satisfecho con la compra.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Matías Peña",
+        "comment": "Calidad excepcional y servicio rápido, de verdad lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Claudia Rivera",
+        "comment": "Muy satisfecha, la calidad y el envío fueron de primera.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Héctor González",
+        "comment": "Excelente producto, llegó en tiempo récord, ¡está de lujo!",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Brenda Fajardo",
+        "comment": "Muy contenta con mi compra, calidad y servicio insuperables.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alfredo Cortés",
+        "comment": "Producto de primera, llegó rápido y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Marisol Montes",
+        "comment": "Excelente experiencia, el producto superó todas mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Leandro Solis",
+        "comment": "Muy buena compra, la calidad es superior y el envío rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rocío Méndez",
+        "comment": "Producto impecable y servicio de lujo, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Víctor Escobar",
+        "comment": "La calidad del producto es insuperable, me encantó la rapidez del envío.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Néstor Palacios",
+        "comment": "Muy satisfecho con mi compra, producto y servicio excelentes.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alicia Estrada",
+        "comment": "Producto de alta calidad, llegó en tiempo récord y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rafael Fuentes",
+        "comment": "Muy buena compra, la experiencia de compra fue excelente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Irene Navarro",
+        "comment": "Producto impecable, calidad y servicio inmejorables, ¡bien chido!",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Santiago Reyes",
+        "comment": "Muy satisfecha, el producto llegó en tiempo récord y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Fernando Ponce",
+        "comment": "Excelente calidad, el producto llegó muy rápido y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mónica Zambrano",
+        "comment": "Muy buena experiencia, servicio de primera y producto impecable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Roberto Aguilar",
+        "comment": "Producto excelente, la calidad es de primera y el envío rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ana Lucía",
+        "comment": "Muy satisfecha con mi compra, el producto es justo lo que necesitaba.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ricardo Velázquez",
+        "comment": "La atención fue excepcional y el producto de alta calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Julieta Cortés",
+        "comment": "Excelente compra, el envío fue rápido y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Carlos Peña",
+        "comment": "Producto de primera, la calidad es insuperable, ¡bien chido!",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Verónica Rojas",
+        "comment": "Muy buena experiencia de compra, lo recomiendo ampliamente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Luis Fernando",
+        "comment": "Producto impecable, llegó rápido y en perfectas condiciones.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Elisa Duarte",
+        "comment": "Calidad y servicio excelentes, estoy muy satisfecha con mi compra.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Diego Álvarez",
+        "comment": "Muy contento con mi compra, la calidad es superior y el envío puntual.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Patricia Vargas",
+        "comment": "Excelente experiencia, el producto llegó en tiempo récord.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Jorge Castillo",
+        "comment": "Muy buena compra, la calidad y el servicio fueron excepcionales.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Cynthia Herrera",
+        "comment": "Producto de primera, me encantó la rapidez del envío.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Armando Rodríguez",
+        "comment": "Muy satisfecho con mi compra, el producto es de alta calidad.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Silvana Mora",
+        "comment": "Excelente atención, la compra fue de lujo y el producto perfecto.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Francisco Ríos",
+        "comment": "Producto impecable y servicio rápido, de verdad lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "María Fernanda",
+        "comment": "Muy buena compra, la calidad del producto es inmejorable.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Esteban Navarro",
+        "comment": "Producto excelente, llegó rápido y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Gloria Ramírez",
+        "comment": "Excelente compra, la atención y calidad del producto fueron excepcionales.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Adolfo Márquez",
+        "comment": "Muy satisfecho, el producto llegó en tiempo récord y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Natalia Ponce",
+        "comment": "Producto de alta calidad y envío súper rápido, me encantó.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Diego Guerrero",
+        "comment": "Excelente atención y calidad, una experiencia de compra de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rosa Jiménez",
+        "comment": "Muy buena compra, la calidad y el servicio fueron excepcionales.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Andrés Molina",
+        "comment": "Producto impecable, llegó en tiempo récord y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Valeria Soto",
+        "comment": "Muy satisfecha, el producto y el envío superaron mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Leonardo Domínguez",
+        "comment": "Calidad insuperable y servicio de primera, de verdad excelente.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Bianca Ríos",
+        "comment": "Muy buena compra, el producto llegó rápido y en perfectas condiciones.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mauricio Alvarado",
+        "comment": "Excelente producto, la calidad es de primera y el envío puntual.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Cecilia Rojas",
+        "comment": "Muy satisfecha con mi compra, de lujo en todos los aspectos.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Javier Ramos",
+        "comment": "Producto excelente y servicio de lujo, superó mis expectativas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "María Fernanda",
+        "comment": "Muy buena compra, la calidad y el envío fueron excepcionales.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Andrés Vargas",
+        "comment": "Producto impecable, llegó rápido y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Cynthia López",
+        "comment": "Excelente experiencia de compra, lo recomiendo sin dudar.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Víctor Hernández",
+        "comment": "Muy buen producto, la calidad es insuperable y el envío fue rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Claudia Ramírez",
+        "comment": "Muy satisfecha, el producto llegó en tiempo récord y sin problemas.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Oscar Navarro",
+        "comment": "Excelente calidad, me encantó la rapidez del envío, ¡bien chido!",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Verónica Fernández",
+        "comment": "Producto y servicio excelentes, la compra fue de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Raúl Morales",
+        "comment": "Muy buena compra, la calidad y el envío fueron excepcionales.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mónica Rojas",
+        "comment": "Producto impecable, llegó en tiempo récord y en perfecto estado.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Gustavo Solis",
+        "comment": "Excelente atención, el producto es de alta calidad y llegó rápido.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Helena Bravo",
+        "comment": "Muy satisfecha con mi compra, el servicio y el producto fueron excepcionales.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Joaquín Domínguez",
+        "comment": "Producto de primera, calidad y envío de lujo, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Daniela Vega",
+        "comment": "Excelente compra, la calidad y el servicio fueron impecables.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Esteban Rivas",
+        "comment": "Muy buena compra, el producto llegó en perfecto estado y a tiempo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Mariana Castillo",
+        "comment": "Producto impecable, superó todas mis expectativas, de lujo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Rafael González",
+        "comment": "Excelente calidad, llegó rápido y en perfecto estado, lo recomiendo.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Alejandra Fuentes",
+        "comment": "Muy satisfecha, el producto y el servicio fueron de primera.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Ignacio Pérez",
+        "comment": "Producto de alta calidad, llegó en tiempo récord, ¡bien chido!",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      },
+      {
+        "name": "Sandra Lozano",
+        "comment": "Excelente compra, la atención y calidad del producto fueron excepcionales.",
+        "rating": "⭐️⭐️⭐️⭐️⭐️"
+      }
+]
