@@ -750,7 +750,7 @@
           const reviewHTML = `
             <div class="feedback-div">
               <p>🔹 ${review.name} - "${review.comment}"</p>
-              <span>➖ ${review.name} ${'⭐️'.repeat(review.rating)}</span>
+              <span>${review.rating}</span>
             </div>
           `;
           reviewsContainer.innerHTML += reviewHTML;
