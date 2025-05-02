@@ -727,43 +727,80 @@
         }
         </script>
 
-        <!-- Firebase SDK -->
-      <script>
-        // Elementos del DOM
-        const reviewsContainer = document.getElementById('reviews-container');
+        
+<script>
+  // Elementos del DOM
+  const reviewsContainer = document.getElementById('reviews-container');
+  const reviewForm = document.getElementById('review-form');
 
-        // Cargar reseñas base desde reviews.json al hacer clic en "Ver más reviews"
-        function loadLocalReviews() {
-          fetch('reviews.json')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`Error al cargar reviews.json: ${response.statusText}`);
-          }
-          return response.json();
-        })
-        .then(localReviews => {
-          reviewsContainer.innerHTML = ''; // Limpia el contenedor antes de agregar nuevas reseñas
-          localReviews.forEach(review => {
-            const reviewHTML = `
-          <div class="feedback-div">
-            <p>🔹 ${review.name} - "${review.comment}"</p>
-            <span>➖ ${review.name} ${'⭐️'.repeat(review.rating)}</span>
-          </div>
-            `;
-            reviewsContainer.innerHTML += reviewHTML;
-          });
-        })
-        .catch(error => console.error('Error al cargar reviews.json:', error));
+  // Cargar reseñas base desde reviews.json
+  function loadLocalReviews() {
+    console.log('Cargando reseñas locales...');
+    fetch('reviews.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Error al cargar reviews.json: ${response.statusText}`);
         }
-
-        // Manejar el evento de apertura del dropdown
-        const feedbackDropdown = document.querySelector('.feedback-dropdown');
-        feedbackDropdown.addEventListener('toggle', () => {
-          if (feedbackDropdown.open) {
-        loadLocalReviews();
-          }
+        return response.json();
+      })
+      .then(localReviews => {
+        console.log('Reseñas locales cargadas:', localReviews);
+        reviewsContainer.innerHTML = ''; // Limpia el contenedor
+        localReviews.forEach(review => {
+          const reviewHTML = `
+            <div class="feedback-div">
+              <p>🔹 ${review.name} - "${review.comment}"</p>
+              <span>➖ ${review.name} ${'⭐️'.repeat(review.rating)}</span>
+            </div>
+          `;
+          reviewsContainer.innerHTML += reviewHTML;
         });
-      </script>
+      })
+      .catch(error => console.error('Error al cargar reviews.json:', error));
+  }
+
+  // Manejar el envío del formulario
+  reviewForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Obtener valores del formulario
+    const fullName = document.getElementById('full-name').value.trim();
+    const orderNumber = document.getElementById('order-number').value.trim();
+    const reviewComment = document.getElementById('review-comment').value.trim();
+    const starRating = document.querySelector('input[name="rating"]:checked')?.value;
+
+    // Validar que todos los campos estén completos
+    if (!fullName || !orderNumber || !reviewComment || !starRating) {
+      alert('Por favor, completa todos los campos.');
+      return;
+    }
+
+    // Crear una nueva reseña
+    const newReview = {
+      name: fullName,
+      orderNumber: orderNumber,
+      comment: reviewComment,
+      rating: parseInt(starRating)
+    };
+
+    // Mostrar la nueva reseña en la página
+    const reviewHTML = `
+      <div class="feedback-div">
+        <p>🔹 ${newReview.name} - "${newReview.comment}"</p>
+        <span>➖ ${newReview.name} ${'⭐️'.repeat(newReview.rating)}</span>
+      </div>
+    `;
+    reviewsContainer.innerHTML = reviewHTML + reviewsContainer.innerHTML; // Las nuevas reseñas van arriba
+    reviewForm.reset();
+    alert('¡Gracias por tu reseña!');
+  });
+
+  // Cargar las reseñas locales al cargar la página
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('Cargando reseñas iniciales...');
+    loadLocalReviews(); // Cargar reseñas de reviews.json
+  });
+</script>
 
 
     <footer id="contact">
